@@ -1,0 +1,56 @@
+.name{
+    margin-top: 4%;
+    margin-left: 4%;
+    font-size: 20px;
+    color: rgb(83, 82, 82);
+}
+
+.songname{
+    margin-left: 5%;
+    width: 30%;
+    height: 30px;
+    border: 1px solid black;
+}
+
+.date{
+    margin-top: 2%;
+    margin-left: 3.6%;
+    font-size: 20px;
+    color: rgb(83, 82, 82);
+}
+
+.songdate{
+    margin-left: 3%;
+    width: 30%;
+    height: 30px;
+    border: 1px solid black;
+}
+
+.image-upload{
+    display: flex;
+    margin-top: 2%;
+}
+
+.Upload-button{
+    margin-left: 7%;
+}
+
+.input-file input[type="file" i]::-webkit-file-upload-button{
+    width: 140px;
+    height: 45px;
+    border: 0px;
+    background-color: grey;
+    color:  white;
+    cursor: pointer;
+}
+
+.imageicon{
+    margin-top: 0.7%;
+    margin-left: 0.5%;
+    position: absolute;
+    color: white;
+}
+
+.input-file{
+    margin-left: 7%;
+}
