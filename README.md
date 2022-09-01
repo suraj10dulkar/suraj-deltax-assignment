@@ -1,13 +1,12 @@
 # suraj-deltax-assignment
 Created a Spotify like website with basic CRUD and song listings. We are having the following entities in the application.
-Artists
- - Name
- - DOB
- - Bio
-Songs
- - Name
- - Date of Release
- - Cover (image)
+Artists Name
+Artists DOB
+Artists Bio
+
+Songs Name
+Songs Date of Release
+Songs Cover (image)
 
 Relationships
 Artist can sing multiple songs
