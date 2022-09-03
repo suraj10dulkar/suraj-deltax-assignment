@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useEffect, useState} from "react";
 import {Modal } from "reactstrap";
 import { AiOutlineSearch } from "react-icons/ai";
 import Filebase64 from "react-file-base64";
@@ -35,7 +35,9 @@ function AddSongs(){
   const AddItmes=(e)=>{
         setoptions([...options,data])
         alert("Artist added in dropdown sucessfully")
+        setModalIsopen(false)
   }
+
 
   const handlealldata=(e)=>{
         e.preventDefault();
@@ -54,12 +56,14 @@ function AddSongs(){
           console.log(alldata)
           setalldata({song_name:"",dor:"",image: "",artist_name:""})
   }
+
+  
     
   return (
         <div>
           <div className="home">
             <div className="header"></div>
-            <div className="main"><b>Home</b></div>
+            <Link to="/"><div className="main"><b>Home</b></div></Link>
             <div className="search">
               <AiOutlineSearch className="iconsearch"/>
               <input type="text" className="searchtext" placeholder="Search"></input>
@@ -123,9 +127,9 @@ function AddSongs(){
                             <p className="title">Add Artist</p>
                             <button className="close" onClick={()=>setModalIsopen(false)}><b>X</b></button>
                           </div>
-                        <hr></hr>
+                          <hr></hr>
 
-                        <div className="box2">
+                          <div className="box2">
                           <div className="cont1">
                             <label for="artist-name">Artist Name</label>
                           </div>
@@ -139,7 +143,7 @@ function AddSongs(){
                             <label for="artist-date">Date of Birth</label>
                           </div>
                           <div className="cont2">
-                            <input type="date" id="artist-date" onChange={e=>setdata({...data,cat: e.target.value})}></input>
+                            <input type="date" id="artist-date" required={true} onChange={e=>setdata({...data,cat: e.target.value})}></input>
                           </div>
                         </div>
 
@@ -148,13 +152,13 @@ function AddSongs(){
                             <label for="artist-bio">Bio</label>
                           </div>
                           <div className="cont2">
-                            <input type="text" id="artist-bio"onChange={e=>setdata({...data,bio: e.target.value})}></input>
+                            <input type="text" id="artist-bio" required={true} onChange={e=>setdata({...data,bio: e.target.value})}></input>
                           </div>
                         </div>
 
                          <div className="button">
                           <button className="cancel" onClick={()=>setModalIsopen(false)}>Cancel</button>
-                          <button className="done" onClick={AddItmes} >Done</button>
+                          <button className="done" onClick={AddItmes} method="POST">Done</button>
                          </div>
                     </div>
                   </Modal>

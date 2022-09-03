@@ -148,9 +148,11 @@
     background-color: gray;
     color: white;
     width: 10%;
-    height: 34px;
+    height: 30px;
     font-size: large;
     border: 0px;
+    text-align: center;
+    padding-top: 1%;
   }
   
   .modal{

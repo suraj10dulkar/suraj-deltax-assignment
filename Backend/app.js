@@ -30,17 +30,18 @@ mongoose.connect(url, (data) => {
     })
   })
 
-  app.post("/add", (req, res) => {
-    console.log(req.body);
-        PostModal1.create({
-            song_name: req.body.song_name,
-            dor: req.body.dor,
-            image: req.body.image,
-            artist_name: req.body.artist_name
-        }).then((post)=>{
-          res.status(200).send(post);
-          console.log(post)
-        }).catch((err)=>{
-          res.status(400).send(err);
-        })
-    })
+
+    app.post("/add", (req, res) => {
+      console.log(req.body);
+          PostModal1.create({
+              song_name: req.body.song_name,
+              dor: req.body.dor,
+              image: req.body.image,
+              artist_name: req.body.artist_name
+          }).then((post)=>{
+            res.status(200).send(post);
+            console.log(post)
+          }).catch((err)=>{
+            res.status(400).send(err);
+          })
+      })
