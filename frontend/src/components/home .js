@@ -4,6 +4,7 @@ import "./home.css"
 import { AiOutlineSearch } from "react-icons/ai";
 import axios from "axios"
 import {useEffect, useState} from 'react';
+import Rating from "./rating";
 
 
 
@@ -15,11 +16,29 @@ function Home(){
         axios.get("http://localhost:3005/image").then((res)=>{
             let data = res.data.reverse();
             setPostData(data);
-            // console.log(data);
+            console.log(data);
         }).catch((err)=>{
             console.log(err)
         })
     }, [])
+
+
+    const[adata,setadata]=useState([]);
+    useEffect(()=>{
+      const getmydata= async()=>{
+        let objt=[]
+        const reqdata= await fetch("http://localhost:3005/image");
+        const resdata= await reqdata.json()
+        console.log(resdata);
+
+        for(let i=0;i<reqdata.length;i++){
+          console.log(resdata[i])
+        }
+        setadata(objt)
+      }
+
+      getmydata();
+    },[]);
 
     
 
@@ -107,7 +126,7 @@ function Home(){
                        <div>
                          <div key={index} className='cart_child' type="none">
                             <div className="rate">
-                              
+                              <Rating></Rating>
                             </div>
                          </div>
                         </div>
@@ -116,18 +135,17 @@ function Home(){
                   </div>
               </div>
 
-              <div><h1>Top 10 Artist</h1></div>   
+              <div><h1>Top 10 Artist</h1></div>
 
-              {postData.map((data,index)=>{
-                
-                let array=[];
+              {adata.map((data,index)=>{
+                return (
+                  <div><h1>{data.artist_name}</h1></div>
+                )
 
-                array.push(data.song_name);
-
-                console.log(array)
-            
-         
-              })}           
+              })
+          
+              }
+          
             </div>
 
             

@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from "react";
+import React,{useState} from "react";
 import {Modal } from "reactstrap";
 import { AiOutlineSearch } from "react-icons/ai";
 import Filebase64 from "react-file-base64";
@@ -26,11 +26,6 @@ function AddSongs(){
                                      })
   const [name,setName]=useState(true);
 
-  // const handleform=(e)=>{
-  //       e.preventDefault();
-  //       // console.log(data)
-  //       // options.push({cat:1,key:data.artist_name})
-  // }
 
   const AddItmes=(e)=>{
         setoptions([...options,data])
@@ -41,7 +36,7 @@ function AddSongs(){
 
   const handlealldata=(e)=>{
         e.preventDefault();
-        // console.log(alldata)
+        console.log(alldata)
         axios({
           url:"http://localhost:3005/add",
           method: "POST",
