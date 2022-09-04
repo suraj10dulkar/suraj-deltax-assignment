@@ -136,15 +136,53 @@ function Home(){
               </div>
 
               <div><h1>Top 10 Artist</h1></div>
+              <div className="cart">
+              <div className='cart6'>
+                  <div className="four"><h4>Artists</h4></div>
+                      {postData.map((data, index) => {
+                       return (
+                       <div>
+                         <div key={index} className='cart_child' type="none">
+                           <div className="last">
+                             <p>{data.artist_name}</p>
+                           </div>
+                         </div>
+                      </div>
+                       )
+                       })}
+                </div>
+                <div className='cart3'>
+                  <div className="three"><h4>Date of Birth</h4></div>
+                       {postData.map((data, index) => {
+                        return (
+                        <div>
+                          <div key={index} className='cart_child' type="none">
+                            <div className="date-of-song">
+                              <p>{data.dor}</p>
+                            </div>
+                          </div>
+                        </div>
+                        )
+                        })}
+                </div>
+                <div className='cart7'>
+                  <div className="six"><h4>Songs</h4></div>
+                      {postData.map((data, index) => {
+                        return (
+                        <div>
+                           <div key={index} className='cart_child' type="none">
+                             <div className="song-art">
+                              <p>{data.song_name}, Before You Go, Brusises, Hold me While You Wait</p>
+                             </div>
+                         </div>
+                        </div>  
+                        )
+                        })}
+                 </div> 
+              </div>
+              
 
-              {adata.map((data,index)=>{
-                return (
-                  <div><h1>{data.artist_name}</h1></div>
-                )
-
-              })
-          
-              }
+              
           
             </div>
 

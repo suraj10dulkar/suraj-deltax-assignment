@@ -55,18 +55,18 @@ function AddSongs(){
   
     
   return (
-        <div>
-          <div className="home">
-            <div className="header"></div>
-            <Link to="/"><div className="main"><b>Home</b></div></Link>
-            <div className="search">
-              <AiOutlineSearch className="iconsearch"/>
-              <input type="text" className="searchtext" placeholder="Search"></input>
-            </div>
-          </div>
-          <form className="form-data" onSubmit={handlealldata} method="POST">
-             <div className="song-form">
-                 <h1>Adding a New Song</h1>
+          <div>
+               <div className="home">
+                  <div className="header"></div>
+                  <Link to="/"><div className="main"><b>Home</b></div></Link>
+                  <div className="search">
+                     <AiOutlineSearch className="iconsearch"/>
+                      <input type="text" className="searchtext" placeholder="Search"></input>
+                  </div>
+                  </div>
+                    <form className="form-data" onSubmit={handlealldata} method="POST">
+                       <div className="song-form">
+                       <h1>Adding a New Song</h1>
 
                  <div className="name">
                     <label for="name">Song Name</label>
@@ -119,9 +119,9 @@ function AddSongs(){
                         <div className="artist-form">
 
                           <div className="box1">
-                            <p className="title">Add Artist</p>
-                            <button className="close" onClick={()=>setModalIsopen(false)}><b>X</b></button>
-                          </div>
+                            <div className="title1">Add Artist</div>
+                             <div className="closear"><button className="close" onClick={()=>setModalIsopen(false)}><b>X</b></button>
+                          </div></div> 
                           <hr></hr>
 
                           <div className="box2">
@@ -158,7 +158,7 @@ function AddSongs(){
                     </div>
                   </Modal>
               </div>
-              <Link to='/'><button className="cancelhome">Cancel</button></Link>
+              <Link to='/home'><button className="cancelhome">Cancel</button></Link>
               <button type="submit" className="formsubmit">Save</button>
               </div>
             </form>
