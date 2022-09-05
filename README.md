@@ -23,7 +23,7 @@ Then Go to Forentend Directory and run : npm start
 
 ![Screenshot (82)](https://user-images.githubusercontent.com/102608955/188329539-1d7da959-4943-4f85-b0fc-c97852c6fd6b.png)
 
-2. After Registration successfull popsup you will land up in home page which consist of header,searchbar,add song property, Top 10 Songs & Top 10 Artist
+2. After Registration successfull popup, you will land up in home page which consist of header,searchbar,add song property, Top 10 Songs & Top 10 Artist
 
 ![Screenshot (83)](https://user-images.githubusercontent.com/102608955/188329683-9e00589b-6f53-4af7-8fee-4b82fbee2948.png)
 
