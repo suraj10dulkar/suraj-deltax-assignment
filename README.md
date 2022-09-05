@@ -18,15 +18,26 @@ Technologies used here are : MongoDB, ExpressJS, NodeJS & React JS
 Instruction for opening the application:
 1. Go to the project directory,then go to the directory name backend and install node modules 
 
-CODE FOR INSTALLING: nmp i
+                                          CODE FOR INSTALLING Node Modules: nmp i
 
-node app.js![1](https://user-images.githubusercontent.com/102608955/188390205-1e3a8762-68a0-491f-8cf4-7eee031d3c3c.jpg)
-
-2. 
+  ![1](https://user-images.githubusercontent.com/102608955/188390205-1e3a8762-68a0-491f-8cf4-7eee031d3c3c.jpg)
 
 
-Then Go to Forentend Directory and run : npm start
+2. Then start the server by using the below code: 
 
+                                                        node app.js
+                                                        
+  ![2](https://user-images.githubusercontent.com/102608955/188391823-edc477d8-d65f-4ede-acd7-a9e8bbef8e83.jpg)
+  
+  and our backend server will be started.
+  ![3](https://user-images.githubusercontent.com/102608955/188391848-abd399d1-71b7-47e9-9f41-33d1dea607ac.jpg)
+  
+
+3.Then Go to Forentend Directory and install the node modules
+
+                                     CODE FOR INSTALLING Node Modules: nmp i
+ 
+4.Then 
 
 1.When you open the project you will get registered page where you have to enter User & EmailID
 
