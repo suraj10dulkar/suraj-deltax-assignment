@@ -14,7 +14,16 @@ Users can rate a song (rating between 1 - 5)
 
 Technologies used here are : MongoDB, ExpressJS, NodeJS & React JS
 
-First Go to Backend Directory and run : node app.js
+
+Instruction for opening the application:
+1. Go to the project directory,then go to the directory name backend and install node modules 
+
+CODE FOR INSTALLING: nmp i
+
+node app.js![1](https://user-images.githubusercontent.com/102608955/188390205-1e3a8762-68a0-491f-8cf4-7eee031d3c3c.jpg)
+
+2. 
+
 
 Then Go to Forentend Directory and run : npm start
 
