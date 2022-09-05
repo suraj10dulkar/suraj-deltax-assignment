@@ -44,7 +44,7 @@ function AddSongs(){
           headers:{
           }
         }).then((post)=>{
-             Navigate("/")
+             Navigate("/home")
         }).catch((err)=>{
              console.log(err)
         })
