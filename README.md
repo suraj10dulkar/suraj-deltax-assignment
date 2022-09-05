@@ -16,16 +16,16 @@ Technologies used here are : MongoDB, ExpressJS, NodeJS & React JS
 
 
 Instruction for opening the application:
-1. Go to the project directory,then go to the directory name backend and install node modules 
+1. Go to the project directory,then go to the directory name backend and install node modules, CODE FOR INSTALLING Node Modules in VS Code is below: 
 
-                                          CODE FOR INSTALLING Node Modules: nmp i
+                                                            nmp i
 
   ![1](https://user-images.githubusercontent.com/102608955/188390205-1e3a8762-68a0-491f-8cf4-7eee031d3c3c.jpg)
 
 
 2. Then start the server by using the below code: 
 
-                                                        node app.js
+                                                           node app.js
                                                         
   ![2](https://user-images.githubusercontent.com/102608955/188391823-edc477d8-d65f-4ede-acd7-a9e8bbef8e83.jpg)
   
@@ -33,11 +33,22 @@ Instruction for opening the application:
   ![3](https://user-images.githubusercontent.com/102608955/188391848-abd399d1-71b7-47e9-9f41-33d1dea607ac.jpg)
   
 
-3.Then Go to Forentend Directory and install the node modules
+3.Then Go to Forentend Directory and install the node modules, CODE FOR INSTALLING Node Modules in VS Code is below: 
 
-                                     CODE FOR INSTALLING Node Modules: nmp i
+                                                             nmp i
+                                                             
+
+  ![4](https://user-images.githubusercontent.com/102608955/188430822-8ccaebbb-2a26-4915-b6f1-2727056026ea.jpg)
+                          
  
-4.Then 
+4.Then start the forentend server the application will be running in localhost, use below code to run react server
+
+                                                             npm start
+                                   
+![5](https://user-images.githubusercontent.com/102608955/188430879-f3d81b06-3a5f-438e-a19d-03ed720af742.jpg)
+
+![6](https://user-images.githubusercontent.com/102608955/188430904-272ccd2e-03b6-476f-8d90-60f1c6a78019.jpg)
+
 
 1.When you open the project you will get registered page where you have to enter User & EmailID
 
