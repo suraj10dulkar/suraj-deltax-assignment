@@ -18,7 +18,7 @@ Technologies used here are : MongoDB, ExpressJS, NodeJS & React JS
 Instruction for opening the application:
 1. Go to the project directory,then go to the directory name backend and install node modules, CODE FOR INSTALLING Node Modules in VS Code is below: 
 
-                                                            nmp i
+                                                            npm i
 
   ![1](https://user-images.githubusercontent.com/102608955/188390205-1e3a8762-68a0-491f-8cf4-7eee031d3c3c.jpg)
 
@@ -35,7 +35,7 @@ Instruction for opening the application:
 
 3.Then Go to Forentend Directory and install the node modules, CODE FOR INSTALLING Node Modules in VS Code is below: 
 
-                                                             nmp i
+                                                             npm i
                                                              
 
   ![4](https://user-images.githubusercontent.com/102608955/188430822-8ccaebbb-2a26-4915-b6f1-2727056026ea.jpg)
